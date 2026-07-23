@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mangesh | Freelance Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="nav-wrap">
+        <a href="#home" class="logo"
+          ><span class="tag-icon">&lt;/&gt;</span> Mangesh.</a
+        >
+        <nav>
+          <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 20px">
+          <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20project.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-primary">Let's Talk</a>
+          <button class="burger" id="burgerBtn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      id="mobileNav"
+      style="
+        display: none;
+        background: var(--bg-alt);
+        border-bottom: 1px solid var(--border);
+        padding: 18px 32px;
+      "
+    >
+      <ul style="display: flex; flex-direction: column; gap: 16px">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="hero-greet">Hey, I'm Mangesh 👋</div>
+          <h1>
+            I Build Websites<br />That Help Businesses<br /><span class="grow"
+              >Grow.</span
+            >
+          </h1>
+          <p class="lead">
+            I'm a Freelance Web Developer specializing in creating modern,
+            responsive and high-performance websites.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#projects" class="btn btn-outline">View My Work</a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/lolagemangesh2003-hub" aria-label="GitHub"
+              ><svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.26-.45-1.29.1-2.69 0 0 .84-.27 2.75 1.03a9.6 9.6 0 015 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.4.2 2.43.1 2.69.64.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"
+                /></svg
+            ></a>
+            <a href="https://www.linkedin.com/in/mangesh-lolage/" aria-label="LinkedIn"
+              ><svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-.98 1.82-2.02 3.75-2.02 4 0 4.75 2.5 4.75 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.45-2.2 2.97V21H9z"
+                /></svg
+            ></a>
+            
+            <a href="https://www.instagram.com/mangesh.lolage_003?igsh=cnE5NW5qcjBmbHpv" aria-label="Instagram"
+              ><svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <div class="hero-photo-frame">
+            <img
+              src="assets/photo.png"
+              alt="Mangesh, profile-picture"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-single reveal">
+          <span class="eyebrow">About Me</span>
+          <h2>I'm Passionate About Coding and Creating Digital Experiences</h2>
+          <p class="desc">
+            I'm a freelance web developer with a passion for building fast,
+            responsive and user-friendly websites. I combine clean code with
+            creative design to deliver digital solutions that drive real
+            results.
+          </p>
+          <ul class="check-list check-list-row">
+            <li>
+              <span class="dot">✓</span> Clean, Efficient &amp; Scalable Code
+            </li>
+            <li>
+              <span class="dot">✓</span> Pixel Perfect &amp; Modern Design
+            </li>
+            <li>
+              <span class="dot">✓</span> On-time Delivery &amp; Clear
+              Communication
+            </li>
+            <li><span class="dot">✓</span> 100% Client Satisfaction</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Download CV ⬇</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="12" cy="8" r="3" />
+                <path d="M6 21v-1a6 6 0 0112 0v1" />
+              </svg>
+            </div>
+            <div class="num">2+</div>
+            <div class="label">Months Experience</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="4" y="5" width="16" height="15" rx="2" />
+                <path d="M8 3v4M16 3v4M4 10h16" />
+              </svg>
+            </div>
+            <div class="num">1</div>
+            <div class="label">Project Completed</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="8" cy="8" r="3" />
+                <circle cx="17" cy="9" r="2.4" />
+                <path
+                  d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M14.5 20c0-2.6 1.9-4.6 4.5-4.6s4.5 2 4.5 4.6"
+                />
+              </svg>
+            </div>
+            <div class="num">1</div>
+            <div class="label">Happy Client</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" />
+              </svg>
+            </div>
+            <div class="num">100%</div>
+            <div class="label">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What I Do</span>
+          <h2 class="section-title">Services That I Offer</h2>
+          <div class="title-rule"></div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon mono">&lt;/&gt;</div>
+            <h3>Web Development</h3>
+            <p>
+              I build fast, responsive and SEO-friendly websites using modern
+              technologies.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="3" y="4" width="18" height="12" rx="2" />
+                <path d="M8 20h8M12 16v4" />
+              </svg>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>
+              I create interactive UI with HTML, CSS, JavaScript and modern
+              frameworks.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="6" y="2" width="12" height="20" rx="2" />
+                <path d="M11 18h2" />
+              </svg>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>
+              I design websites that look perfect on all devices and screen
+              sizes.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M4 20l7-7M14 4l6 6-9 9-6-6z" />
+              </svg>
+            </div>
+            <h3>Website Redesign</h3>
+            <p>
+              I redesign old websites to give them a modern look and better
+              performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">My Skills</span>
+          <h2 class="section-title">Technologies I Work With</h2>
+          <div class="title-rule"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-badge" style="background: #e34f26">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="8 4 2 12 8 20"></polyline>
+                <polyline points="16 4 22 12 16 20"></polyline>
+              </svg>
+            </div>
+            <div class="sname">HTML5</div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-badge" style="background: #2965f1">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 3h16l-1.5 16L12 21l-6.5-2L4 3z"></path>
+                <path d="M8 8h8l-.4 5-3.6 1.2L8.4 13"></path>
+              </svg>
+            </div>
+            <div class="sname">CSS3</div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-badge" style="background: #f0db4f">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0a0a12"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 4v11.5a2.5 2.5 0 01-5 0"></path>
+                <path d="M14 15.5a2.5 2.5 0 005 0V13"></path>
+                <path d="M19 4h-5"></path>
+              </svg>
+            </div>
+            <div class="sname">JavaScript</div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-badge" style="background: #38bdf8">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff">
+                <path
+                  d="M12 6c-2.7 0-4.3 1.3-5 4 1-1.3 2.2-1.8 3.5-1.5.8.2 1.3.8 1.9 1.4.9 1 2 2.1 4.4 2.1 2.7 0 4.3-1.3 5-4-1 1.3-2.2 1.8-3.5 1.5-.8-.2-1.3-.8-1.9-1.4-.9-1-2-2.1-4.4-2.1zM7 12c-2.7 0-4.3 1.3-5 4 1-1.3 2.2-1.8 3.5-1.5.8.2 1.3.8 1.9 1.4.9 1 2 2.1 4.4 2.1 2.7 0 4.3-1.3 5-4-1 1.3-2.2 1.8-3.5 1.5-.8-.2-1.3-.8-1.9-1.4-.9-1-2-2.1-4.4-2.1z"
+                ></path>
+              </svg>
+            </div>
+            <div class="sname">Tailwind CSS</div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-badge" style="background: #7952b3">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M6 3h6.5a3.3 3.3 0 013.3 3.3v.2a3.3 3.3 0 01-2 3 3.5 3.5 0 012.4 3.4v.2A3.9 3.9 0 0112 17H6V3z"
+                ></path>
+                <path
+                  d="M9 3v14M9 9.5h3.2M9 14.5h3.6"
+                  stroke-width="1.4"
+                ></path>
+              </svg>
+            </div>
+            <div class="sname">Bootstrap</div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-badge" style="background: #f14e32">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="6" cy="6" r="2"></circle>
+                <circle cx="6" cy="18" r="2"></circle>
+                <circle cx="17" cy="15" r="2"></circle>
+                <path d="M6 8v8"></path>
+                <path d="M9 6h4a4 4 0 014 4v3"></path>
+              </svg>
+            </div>
+            <div class="sname">Git &amp; GitHub</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">My Process</span>
+          <h2 class="section-title">How I Work</h2>
+          <div class="title-rule"></div>
+        </div>
+        <div class="process-grid">
+          <div class="process-line"></div>
+          <div class="process-step reveal">
+            <div class="process-dot">01</div>
+            <h4>Discuss</h4>
+            <p>Understanding your requirements and goals.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-dot">02</div>
+            <h4>Plan</h4>
+            <p>Planning strategy and designing UI/UX.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-dot">03</div>
+            <h4>Develop</h4>
+            <p>Building clean and responsive code.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-dot">04</div>
+            <h4>Deliver</h4>
+            <p>Testing and delivering high-quality product.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2 class="section-title">What Clients Say About Me</h2>
+          <div class="title-rule"></div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-quote-icon">&ldquo;</div>
+          <p class="testi-text">
+            Mangesh is a fantastic developer! He delivered our website on time
+            with clean code and great design. Highly recommended for any web
+            development work.
+          </p>
+          <div class="testi-author">
+            <img
+              src="assets/Client-Profile.png"
+              alt="Client photo"
+            />
+            <div style="text-align: left">
+              <div class="name">Ritesh Chavhan</div>
+              <div class="role">Owner, Chavhan Catereing Services</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div>
+            <span class="eyebrow">My Work</span>
+            <h2 class="section-title">Recent Projects</h2>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <a
+            class="project-card reveal"
+            href="/Project/Catering-Service-Project/index.html"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="project-thumb">
+              <span class="tag">Business Website</span>
+              <img
+                src="assets/Caterering-Project.png"
+                alt="Chavan Caterers & Suppliers landing page preview"
+              />
+            </div>
+            <div class="project-info">
+              <h4>Chavhan Catereing Services<span class="ext">↗</span></h4>
+              <p>Modern, fully responsive website designed and build</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT CTA ================= -->
+    <section class="contact-cta" id="contact">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-text">
+            <span class="eyebrow">Let's Work Together</span>
+            <h2>Have a Project in Mind?</h2>
+            <p>
+              I'm available for freelance projects. Let's discuss how we can
+              work together to bring your ideas to life.
+            </p>
+            <div class="cta-contact-row">
+              <div>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M2 6l10 7 10-7" />
+                </svg>
+                freelance-mangeshh@outlook.com
+              </div>
+              <div>
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path
+                    d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L7.9 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"
+                  />
+                </svg>
+                +91 78228 93165
+              </div>
+            </div>
+            <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20project.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-primary">Let's Talk →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo">
+              <span class="tag-icon">&lt;/&gt;</span> Mangesh.
+            </div>
+            <p class="footer-desc">
+              I build websites that are fast, responsive and focused on
+              providing the best user experience.
+            </p>
+            <div class="footer-social">
+              <a href="https://github.com/lolagemangesh2003-hub" aria-label="GitHub"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.26-.45-1.29.1-2.69 0 0 .84-.27 2.75 1.03a9.6 9.6 0 015 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.4.2 2.43.1 2.69.64.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"
+                  /></svg
+              ></a>
+              <a href="https://www.linkedin.com/in/mangesh-lolage/" aria-label="LinkedIn"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-.98 1.82-2.02 3.75-2.02 4 0 4.75 2.5 4.75 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.45-2.2 2.97V21H9z"
+                  /></svg
+              ></a>
+              <a href="https://www.instagram.com/mangesh.lolage_003?igsh=cnE5NW5qcjBmbHpv" aria-label="Instagram"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" /></svg
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Frontend Development</a></li>
+              <li><a href="#services">Responsive Design</a></li>
+              <li><a href="#services">Website Redesign</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Contact</h5>
+            <div class="footer-contact-item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 6l10 7 10-7" />
+              </svg>
+              freelance-mangeshh@outlook.com
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L7.9 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"
+                />
+              </svg>
+              +91 78228 93165
+            </div>
+          </div>
+        </div>
+        <div class="copyright">© 2026 Mangesh. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
