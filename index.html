@@ -1,749 +1,704 @@
 <!doctype html>
-<!--
-  ╔══════════════════════════════════════╗
-  ║   Crafted with care by Mangesh       ║
-  ║   If you're reading this, hi 👋       ║
-  ╚══════════════════════════════════════╝
--->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mangesh | Freelance Web Developer</title>
+
+    <title>Mangesh | Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mangesh, a web developer creating modern and responsive websites."
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/CSS/style.css">
+
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
+
   <body>
-    <!-- ================= HEADER ================= -->
-    <header>
+    <!-- NAVIGATION -->
+    <header class="site-header">
       <div class="nav-wrap">
-        <a href="#home" class="logo"
-          ><span class="tag-icon">&lt;/&gt;</span> Mangesh.</a
-        >
-        <nav>
-          <ul>
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#packages">Packages</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+        <a href="#home" class="logo">
+          <span class="tag-icon">&lt;/&gt;</span> Mangesh.
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <div style="display: flex; align-items: center; gap: 20px">
-          <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20project.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-primary">Let's Talk</a>
-          <button class="burger" id="burgerBtn" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+
+          <button
+            class="burger"
+            id="burgerBtn"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
       </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
-    <nav
-      id="mobileNav"
-      style="
-        display: none;
-        background: var(--bg-alt);
-        border-bottom: 1px solid var(--border);
-        padding: 18px 32px;
-      "
-    >
-      <ul style="display: flex; flex-direction: column; gap: 16px">
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#services">Services</a></li>
-        <li><a class="nav-link" href="#packages">Packages</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#skills">Skills</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 
-    <!-- ================= HERO ================= -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="reveal">
-          <div class="hero-greet">Hey, I'm Mangesh 👋</div>
-          <h1>
-            I Build Websites<br />That Help Businesses<br /><span class="grow"
-              >Grow.</span
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-greet">Hey, I'm Mangesh 👋</p>
+
+            <h1>
+              I Build Websites<br />
+              That Help Businesses<br />
+              <span class="grow">Grow.</span>
+            </h1>
+
+            <p class="lead">
+              I'm a web developer passionate about creating modern, responsive
+              and user-friendly digital experiences.
+            </p>
+
+            <div class="hero-btns">
+              <a href="#contact" class="btn btn-primary">Hire Me</a>
+              <a href="#projects" class="btn btn-outline">View My Work</a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="hero-photo-frame">
+              <!-- Keep your existing profile image path here -->
+              <img src="assets/photo.png" alt="Mangesh, web developer" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">About Me</span>
+            <h2 class="section-title">
+              Building Digital Experiences That Matter
+            </h2>
+            <div class="title-rule"></div>
+          </div>
+
+          <div class="about-content">
+            <p>
+              I'm a web developer who enjoys turning ideas into functional,
+              responsive websites. I focus on clean code, thoughtful design and
+              creating experiences that work well across devices.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <strong>01+</strong>
+              <span>Projects Built</span>
+            </div>
+
+            <div class="stat-card">
+              <strong>MERN</strong>
+              <span>Development Stack</span>
+            </div>
+
+            <div class="stat-card">
+              <strong>100%</strong>
+              <span>Learning Mindset</span>
+            </div>
+
+            <div class="stat-card">
+              <strong>24/7</strong>
+              <span>Curiosity to Learn</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section experience-section" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">My Journey</span>
+            <h2 class="section-title">Experience &amp; Growth</h2>
+            <div class="title-rule"></div>
+          </div>
+
+          <div class="experience-timeline">
+            <article class="experience-card">
+              <div class="experience-marker" aria-hidden="true"></div>
+              <div class="experience-card-inner">
+                <div class="experience-card-heading">
+                  <div>
+                    <span class="experience-label">Current</span>
+                    <h3>Software Developer Intern</h3>
+                    <p class="experience-company">
+                      Bqarlson Techmologies Pvt. Ltd.
+                    </p>
+                  </div>
+                  <span class="experience-period">September – Present</span>
+                </div>
+
+                <p class="experience-description">
+                  Gaining hands-on experience with application development,
+                  understanding business workflows, and building features for a
+                  web application.
+                </p>
+                <div class="experience-tags" aria-label="Relevant technologies">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>Shadcn</span>
+                  <span>Tailwind CSS</span>
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="experience-timeline">
+            <article class="experience-card">
+              <div class="experience-marker" aria-hidden="true"></div>
+              <div class="experience-card-inner">
+                <div class="experience-card-heading">
+                  <div>
+                    <span class="experience-label">Education</span>
+                    <h3>MERN Stack Developer Trainee</h3>
+                    <p class="experience-company">AccioJob</p>
+                  </div>
+                  <span class="experience-period"
+                    >[Start Month Year] – Present</span
+                  >
+                </div>
+
+                <p class="experience-description">
+                  Acquired hands-on technical training in full-stack development, mastering MongoDB, Express.js, React, and Node.js to build modern web applications.
+                </p>
+
+                <h4>What I'm Working On</h4>
+                <ul class="experience-responsibilities">
+                  <li>
+                    Trained as MERN developer built complete full-stack web application.
+                  </li>
+                  <li>Mastered MongoDB, Express, React, Node through project development.</li>
+                </ul>
+
+                <div class="experience-tags" aria-label="Relevant technologies">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="experience-timeline">
+            <article class="experience-card">
+              <div class="experience-marker" aria-hidden="true"></div>
+              <div class="experience-card-inner">
+                <div class="experience-card-heading">
+                  <div>
+                    <span class="experience-label">INTERNSHIP</span>
+                    <h3>Web Developer Intern</h3>
+                    <p class="experience-company">VaultOfCodes</p>
+                  </div>
+                  <span class="experience-period"
+                    >November 2024 – December 2024</span
+                  >
+                </div>
+
+                <p class="experience-description">
+                  Gained hands-on experience with application development,
+                  understanding web technologies like HTML, CSS, JavaScript.
+                </p>
+
+                <h4>What I'm Working On</h4>
+                <ul class="experience-responsibilities">
+                  <li>
+                    Designed and developed a fully responsive personal portfolio
+                    website with modern UI/UX principles, focusing on
+                    performance and consistency across devices.
+                  </li>
+                  <li>
+                    Maintained version control and project documentation using
+                    Git and GitHub.
+                  </li>
+                </ul>
+
+                <div class="experience-tags" aria-label="Relevant technologies">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="experience-timeline">
+            <article class="experience-card">
+              <div class="experience-marker" aria-hidden="true"></div>
+              <div class="experience-card-inner">
+                <div class="experience-card-heading">
+                  <div>
+                    <span class="experience-label">Education</span>
+                    <h3>Student</h3>
+                    <p class="experience-company">Pravara Rural Engineering College Loni B.K</p>
+                  </div>
+                  <span class="experience-period"
+                    >January 2021 – June 2025</span
+                  >
+                </div>
+
+                <p class="experience-description">
+                  Studied foundational computer science principles, including object-oriented programming, data structures, algorithms, and software engineering methodologies.
+                </p>
+
+                <div class="experience-tags" aria-label="Relevant technologies">
+                  <span>OOP</span>
+                  <span>DBMS</span>
+                  <span>AI/ML</span>
+                  <span>STQA</span>
+                  <span>Web Technology</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section section-alt" id="services">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">What I Do</span>
+            <h2 class="section-title">Services I Offer</h2>
+            <div class="title-rule"></div>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-number">01</div>
+              <h3>Web Development</h3>
+              <p>
+                Modern websites built around your business needs, performance
+                and usability.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">02</div>
+              <h3>Frontend Development</h3>
+              <p>
+                Interactive and responsive user interfaces using modern frontend
+                technologies.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">03</div>
+              <h3>Responsive Design</h3>
+              <p>
+                Layouts that adapt to desktop, tablet and mobile screens without
+                compromising usability.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">04</div>
+              <h3>Website Redesign</h3>
+              <p>
+                Give an existing website a fresh visual appearance and a more
+                intuitive experience.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS CAROUSEL -->
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="projects-heading">
+            <div>
+              <span class="eyebrow">Selected Work</span>
+              <h2 class="section-title">Projects I've Built</h2>
+              <p class="projects-subtitle">
+                A few things I've been working on.
+              </p>
+            </div>
+
+            <div class="carousel-counter" aria-live="polite">
+              <span id="currentProject">01</span>
+              <span class="counter-divider">/</span>
+              <span id="totalProjects">01</span>
+            </div>
+          </div>
+
+          <div class="projects-carousel-wrapper">
+            <button
+              class="carousel-btn carousel-prev"
+              id="projectsPrev"
+              type="button"
+              aria-label="Previous project"
             >
-          </h1>
-          <p class="lead">
-            I'm a Freelance Web Developer specializing in creating modern,
-            responsive and high-performance websites.
-          </p>
-          <div class="hero-btns">
-            <a href="#contact" class="btn btn-primary">Hire Me</a>
-            <a href="#projects" class="btn btn-outline">View My Work</a>
-          </div>
-          <div class="social-row">
-            <a href="https://github.com/lolagemangesh2003-hub" aria-label="GitHub"
-              ><svg
-                width="17"
-                height="17"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.26-.45-1.29.1-2.69 0 0 .84-.27 2.75 1.03a9.6 9.6 0 015 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.4.2 2.43.1 2.69.64.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"
-                /></svg
-            ></a>
-            <a href="https://www.linkedin.com/in/mangesh-lolage/" aria-label="LinkedIn"
-              ><svg
-                width="17"
-                height="17"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-.98 1.82-2.02 3.75-2.02 4 0 4.75 2.5 4.75 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.45-2.2 2.97V21H9z"
-                /></svg
-            ></a>
-            <a href="https://www.instagram.com/mangesh.lolage_003/" aria-label="Instagram"
-              ><svg
-                width="17"
-                height="17"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.5" cy="6.5" r="1" /></svg
-            ></a>
-          </div>
-        </div>
-        <div class="hero-media reveal">
-          <div class="hero-photo-frame">
-            <img
-              src="assets/photo.png"
-              alt="Mangesh, a freelance web developer"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+              &#8592;
+            </button>
 
-    <!-- ================= ABOUT ================= -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-single reveal">
-          <span class="eyebrow">About Me</span>
-          <h2>I'm Passionate About Coding and Creating Digital Experiences</h2>
-          <p class="desc">
-            I'm a freelance web developer with a passion for building fast,
-            responsive and user-friendly websites. I combine clean code with
-            creative design to deliver digital solutions that drive real
-            results.
-          </p>
-          <ul class="check-list check-list-row">
-            <li>
-              <span class="dot">✓</span> Clean, Efficient &amp; Scalable Code
-            </li>
-            <li>
-              <span class="dot">✓</span> Pixel Perfect &amp; Modern Design
-            </li>
-            <li>
-              <span class="dot">✓</span> On-time Delivery &amp; Clear
-              Communication
-            </li>
-            <li><span class="dot">✓</span> 100% Client Satisfaction</li>
-          </ul>
-          <a href="/assets/Resume/Mangesh_Lolage_Resume.pdf" class="btn btn-primary">Download CV ⬇</a>
-        </div>
-      </div>
+            <div class="projects-carousel" id="projectsViewport">
+              <div class="projects-track" id="projectsTrack">
+                <!-- PROJECT 1 -->
+                <a
+                  class="project-card"
+                  href="https://job-application-tracker-flax-psi.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="project-thumb">
+                    <img
+                      src="/Freelance-Dome-Portfolio/assets/Job-Application-Tracker.png"
+                      alt="Chavan Caterers and Suppliers website preview"
+                      loading="lazy"
+                    />
 
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card reveal">
-            <div class="stat-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <circle cx="12" cy="8" r="3" />
-                <path d="M6 21v-1a6 6 0 0112 0v1" />
-              </svg>
-            </div>
-            <div class="num">2+</div>
-            <div class="label">Months Experience</div>
-          </div>
-          <div class="stat-card reveal">
-            <div class="stat-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <rect x="4" y="5" width="16" height="15" rx="2" />
-                <path d="M8 3v4M16 3v4M4 10h16" />
-              </svg>
-            </div>
-            <div class="num">1</div>
-            <div class="label">Project Completed</div>
-          </div>
-          <div class="stat-card reveal">
-            <div class="stat-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <circle cx="8" cy="8" r="3" />
-                <circle cx="17" cy="9" r="2.4" />
-                <path
-                  d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M14.5 20c0-2.6 1.9-4.6 4.5-4.6s4.5 2 4.5 4.6"
-                />
-              </svg>
-            </div>
-            <div class="num">1</div>
-            <div class="label">Happy Client</div>
-          </div>
-          <div class="stat-card reveal">
-            <div class="stat-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" />
-              </svg>
-            </div>
-            <div class="num">100%</div>
-            <div class="label">Client Satisfaction</div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <span class="project-tag">MERN Project</span>
+                  </div>
 
-    <!-- ================= SERVICES ================= -->
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">What I Do</span>
-          <h2 class="section-title">Services That I Offer</h2>
-          <div class="title-rule"></div>
-        </div>
-        <div class="services-grid">
-          <div class="service-card reveal">
-            <div class="service-icon mono">&lt;/&gt;</div>
-            <h3>Web Development</h3>
-            <p>
-              I build fast, responsive and SEO-friendly websites using modern
-              technologies.
-            </p>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <rect x="3" y="4" width="18" height="12" rx="2" />
-                <path d="M8 20h8M12 16v4" />
-              </svg>
-            </div>
-            <h3>Frontend Development</h3>
-            <p>
-              I create interactive UI with HTML, CSS, JavaScript and modern
-              frameworks.
-            </p>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <rect x="6" y="2" width="12" height="20" rx="2" />
-                <path d="M11 18h2" />
-              </svg>
-            </div>
-            <h3>Responsive Design</h3>
-            <p>
-              I design websites that look perfect on all devices and screen
-              sizes.
-            </p>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <path d="M4 20l7-7M14 4l6 6-9 9-6-6z" />
-              </svg>
-            </div>
-            <h3>Website Redesign</h3>
-            <p>
-              I redesign old websites to give them a modern look and better
-              performance.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+                  <div class="project-info">
+                    <div>
+                      <p class="project-category">Web Application Development</p>
+                      <h3>Job Application Tracker</h3>
+                      <p class="project-description">
+                        A full-stack MERN application to help manage and track job applications in one place.
+                      </p>
+                    </div>
 
-    <!-- ================= PACKAGES ================= -->
-    <section class="packages" id="packages">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">My Pricing</span>
-          <h2 class="section-title">Packages I Offer</h2>
-          <div class="title-rule"></div>
-        </div>
-        <div class="packages-grid">
-          <div class="package-card reveal">
-            <div class="package-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <rect x="3" y="4" width="18" height="12" rx="2" />
-                <path d="M8 20h8M12 16v4" />
-              </svg>
-            </div>
-            <h3>Frontend Development</h3>
-            <div class="package-price">₹1,999<span>/ project</span></div>
-            <div class="package-note">Basic</div>
-            <p class="desc">
-              A clean, interactive UI built with HTML, CSS &amp; JavaScript —
-              ideal for simple sites and landing pages.
-            </p>
-            <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20Frontend%20Development.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-outline">Get Started</a>
-          </div>
-          <div class="package-card reveal">
-            <div class="package-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <path d="M4 20l7-7M14 4l6 6-9 9-6-6z" />
-              </svg>
-            </div>
-            <h3>Website Redesign</h3>
-            <div class="package-price">₹2,599<span>/ project</span></div>
-            <div class="package-note">Standard</div>
-            <p class="desc">
-              A full visual and structural refresh of your existing website —
-              modern look, better performance.
-            </p>
-            <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20Website%20Redesign.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-outline">Get Started</a>
-          </div>
-          <div class="package-card reveal">
-            <div class="package-icon mono">&lt;/&gt;</div>
-            <h3>Web Development</h3>
-            <div class="package-price">₹2,999<span>/ project</span></div>
-            <div class="package-note">Standard</div>
-            <p class="desc">
-              A complete website built from scratch — fast, responsive and
-              SEO-friendly using modern technologies.
-            </p>
-            <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20Web%20Development.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-outline">Get Started</a>
-          </div>
-          <div class="package-card popular reveal">
-            <div class="package-badge">Most Popular</div>
-            <div class="package-icon">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <rect x="6" y="2" width="12" height="20" rx="2" />
-                <path d="M11 18h2" />
-              </svg>
-            </div>
-            <h3>Responsive Design</h3>
-            <div class="package-price">₹4,999<span>/ project</span></div>
-            <div class="package-note">Premium</div>
-            <p class="desc">
-              Your site perfected across every screen size, with added polish
-              and performance optimization included.
-            </p>
-            <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20Responsive Design.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-        <p
-          style="
-            text-align: center;
-            font-size: 0.8rem;
-            color: var(--text-dimmer);
-            margin-top: 30px;
-          "
-        >
-          Prices are starting estimates — final quote depends on project
-          scope and requirements.
-        </p>
-      </div>
-    </section>
+                    <span class="project-link-icon" aria-hidden="true">↗</span>
+                  </div>
+                </a>
 
-    <!-- ================= SKILLS ================= -->
-    <section class="skills" id="skills">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">My Skills</span>
-          <h2 class="section-title">Technologies I Work With</h2>
-          <div class="title-rule"></div>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <div class="skill-badge" style="background: #e34f26">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="8 4 2 12 8 20"></polyline>
-                <polyline points="16 4 22 12 16 20"></polyline>
-              </svg>
-            </div>
-            <div class="sname">HTML5</div>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-badge" style="background: #2965f1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 3h16l-1.5 16L12 21l-6.5-2L4 3z"></path>
-                <path d="M8 8h8l-.4 5-3.6 1.2L8.4 13"></path>
-              </svg>
-            </div>
-            <div class="sname">CSS3</div>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-badge" style="background: #f0db4f">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0a0a12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 4v11.5a2.5 2.5 0 01-5 0"></path>
-                <path d="M14 15.5a2.5 2.5 0 005 0V13"></path>
-                <path d="M19 4h-5"></path>
-              </svg>
-            </div>
-            <div class="sname">JavaScript</div>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-badge" style="background: #38bdf8">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff">
-                <path d="M12 6c-2.7 0-4.3 1.3-5 4 1-1.3 2.2-1.8 3.5-1.5.8.2 1.3.8 1.9 1.4.9 1 2 2.1 4.4 2.1 2.7 0 4.3-1.3 5-4-1 1.3-2.2 1.8-3.5 1.5-.8-.2-1.3-.8-1.9-1.4-.9-1-2-2.1-4.4-2.1zM7 12c-2.7 0-4.3 1.3-5 4 1-1.3 2.2-1.8 3.5-1.5.8.2 1.3.8 1.9 1.4.9 1 2 2.1 4.4 2.1 2.7 0 4.3-1.3 5-4-1 1.3-2.2 1.8-3.5 1.5-.8-.2-1.3-.8-1.9-1.4-.9-1-2-2.1-4.4-2.1z"></path>
-              </svg>
-            </div>
-            <div class="sname">Tailwind CSS</div>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-badge" style="background: #7952b3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 3h6.5a3.3 3.3 0 013.3 3.3v.2a3.3 3.3 0 01-2 3 3.5 3.5 0 012.4 3.4v.2A3.9 3.9 0 0112 17H6V3z"></path>
-                <path d="M9 3v14M9 9.5h3.2M9 14.5h3.6" stroke-width="1.4"></path>
-              </svg>
-            </div>
-            <div class="sname">Bootstrap</div>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-badge" style="background: #f14e32">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="6" cy="6" r="2"></circle>
-                <circle cx="6" cy="18" r="2"></circle>
-                <circle cx="17" cy="15" r="2"></circle>
-                <path d="M6 8v8"></path>
-                <path d="M9 6h4a4 4 0 014 4v3"></path>
-              </svg>
-            </div>
-            <div class="sname">Git &amp; GitHub</div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <!-- PROJECT 2: Duplicate this card for your next project -->
+                 <a
+                  class="project-card"
+                  href="https://job-application-tracker-flax-psi.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="project-thumb">
+                    <img
+                      src="/Freelance-Dome-Portfolio/assets/Caterering-Project.png"
+                      alt="Chavan Caterers and Suppliers website preview"
+                      loading="lazy"
+                    />
 
-    <!-- ================= PROCESS ================= -->
-    <section class="process">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">My Process</span>
-          <h2 class="section-title">How I Work</h2>
-          <div class="title-rule"></div>
-        </div>
-        <div class="process-grid">
-          <div class="process-line"></div>
-          <div class="process-step reveal">
-            <div class="process-dot">01</div>
-            <h4>Discuss</h4>
-            <p>Understanding your requirements and goals.</p>
-          </div>
-          <div class="process-step reveal">
-            <div class="process-dot">02</div>
-            <h4>Plan</h4>
-            <p>Planning strategy and designing UI/UX.</p>
-          </div>
-          <div class="process-step reveal">
-            <div class="process-dot">03</div>
-            <h4>Develop</h4>
-            <p>Building clean and responsive code.</p>
-          </div>
-          <div class="process-step reveal">
-            <div class="process-dot">04</div>
-            <h4>Deliver</h4>
-            <p>Testing and delivering high-quality product.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <span class="project-tag">Business Website</span>
+                  </div>
 
-    <!-- ================= TESTIMONIALS ================= -->
-    <section class="testimonials">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Testimonials</span>
-          <h2 class="section-title">What Clients Say About Me</h2>
-          <div class="title-rule"></div>
-        </div>
-        <div class="testi-card reveal">
-          <div class="testi-quote-icon">&ldquo;</div>
-          <p class="testi-text">
-            Mangesh is a fantastic developer! He delivered our website on time
-            with clean code and great design. Highly recommended for any web
-            development work.
-          </p>
-          <div class="testi-author">
-            <img
-              src="/assets/Client-Profile.png"
-              alt="Client photo"
-            />
-            <div style="text-align: left">
-              <div class="name">Ritesh Chavhan</div>
-              <div class="role">
-                Owner, Chavhan Catereing Services
+                  <div class="project-info">
+                    <div>
+                      <p class="project-category">Web Development</p>
+                      <h3>Chavhan Catereing Services</h3>
+                      <p class="project-description">
+                        Modern, responsive website designed for a catering
+                        business.
+                      </p>
+                    </div>
+
+                    <span class="project-link-icon" aria-hidden="true">↗</span>
+                  </div>
+                </a>
+                <!-- PROJECT 3: Replace with your own project -->
+                <a
+                  class="project-card"
+                  href="https://amorae-resort-client-demo-v2.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="project-thumb">
+                    <img
+                      src="/Freelance-Dome-Portfolio/assets/Amore.png"
+                      alt="Chavan Caterers and Suppliers website preview"
+                      loading="lazy"
+                    />
+
+                    <span class="project-tag">Business Website</span>
+                  </div>
+
+                  <div class="project-info">
+                    <div>
+                      <p class="project-category">Web Development</p>
+                      <h3>Amorae Resort</h3>
+                      <p class="project-description">
+                        Modern, responsive website designed for a Amorae Resort.
+                      </p>
+                    </div>
+
+                    <span class="project-link-icon" aria-hidden="true">↗</span>
+                  </div>
+                </a>
+
+                <!-- Add more project-card elements here -->
               </div>
-              <div class="testi-stars">★★★★★</div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ================= PROJECTS ================= -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="projects-head reveal">
-          <div>
-            <span class="eyebrow">My Work</span>
-            <h2 class="section-title">Recent Projects</h2>
+            <button
+              class="carousel-btn carousel-next"
+              id="projectsNext"
+              type="button"
+              aria-label="Next project"
+            >
+              &#8594;
+            </button>
           </div>
+
+          <div
+            class="carousel-dots"
+            id="projectsDots"
+            aria-label="Choose a project"
+          ></div>
+
+          <p class="carousel-hint">
+            <span>←</span> Explore my projects <span>→</span>
+          </p>
         </div>
-        <div class="projects-grid">
-          <a
-            class="project-card reveal"
-            href="https://chavan-catering-services.netlify.app/"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="project-thumb">
-              <span class="tag">Business Website</span>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">My Toolkit</span>
+            <h2 class="section-title">Technologies I Work With</h2>
+            <div class="title-rule"></div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">
               <img
-                src="/assets/Caterering-Project.png"
-                alt="Chavan Caterers & Suppliers landing page preview"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="HTML5"
               />
+              <span>HTML5</span>
             </div>
-            <div class="project-info">
-              <h4>
-                Chavhan Catereing Services<span class="ext">↗</span>
-              </h4>
-              <p>Modern, fully responsive website designed and build</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <!-- ================= CONTACT CTA ================= -->
-    <section class="contact-cta" id="contact">
-      <div class="container">
-        <div class="cta-box reveal">
-          <div class="cta-text">
-            <span class="eyebrow">Let's Work Together</span>
-            <h2>Have a Project in Mind?</h2>
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                alt="CSS3"
+              />
+              <span>CSS3</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+              <span>JavaScript</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="React"
+              />
+              <span>React.js</span>
+            </div>
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+              />
+              <span>Node.js</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                alt="Express.js"
+              />
+              <span>Express.js</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+              />
+              <span>MongoDB</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              />
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS"
+              />
+              <span>Tailwind CSS</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap"
+              />
+              <span>Bootstrap</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                alt="Git"
+              />
+              <span>Git</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                alt="GitHub"
+              />
+              <span>GitHub</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                alt="Postman"
+              />
+              <span>Postman</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+                alt="npm"
+              />
+              <span>npm</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                alt="Vite"
+              />
+              <span>Vite</span>
+            </div>
+
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                alt="Visual Studio Code"
+              />
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <span class="eyebrow">Have an Idea?</span>
+
+            <h2>Let's Build Something Great.</h2>
+
             <p>
-              I'm available for freelance projects. Let's discuss how we can
-              work together to bring your ideas to life.
+              Have a project in mind or need a website for your business? Let's
+              talk about it.
             </p>
-            <div class="cta-contact-row">
-              <div>
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                >
-                  <rect x="2" y="4" width="20" height="16" rx="2" />
-                  <path d="M2 6l10 7 10-7" />
-                </svg>
-                freelance-mangeshh@outlook.com
-              </div>
-              <div>
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                >
-                  <path
-                    d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L7.9 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"
-                  />
-                </svg>
-                +91 78228 93165
-              </div>
-            </div>
-            <a href="https://wa.me/917822893165?text=Hi!%20👋 I'm%20interested%20in%20hiring%20you%20for%20a%20project.%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20get%20quote%20and%20check%20your%20availability.%20Let's%20talk!%3F" class="btn btn-primary">Let's Talk →</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ================= FOOTER ================= -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <div class="footer-logo">
-              <span class="tag-icon">&lt;/&gt;</span> Mangesh.
-            </div>
-            <p class="footer-desc">
-              I build websites that are fast, responsive and focused on
-              providing the best user experience.
-            </p>
-            <div class="footer-social">
-              <a href="https://github.com/lolagemangesh2003-hub" aria-label="GitHub"
-                ><svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.26-.45-1.29.1-2.69 0 0 .84-.27 2.75 1.03a9.6 9.6 0 015 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.4.2 2.43.1 2.69.64.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"
-                  /></svg
-              ></a>
-              <a href="https://www.linkedin.com/in/mangesh-lolage/" aria-label="LinkedIn"
-                ><svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-.98 1.82-2.02 3.75-2.02 4 0 4.75 2.5 4.75 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.45-2.2 2.97V21H9z"
-                  /></svg
-              ></a>
-              <a href="https://www.instagram.com/mangesh.lolage_003/" aria-label="Instagram"
-                ><svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="5" />
-                  <circle cx="12" cy="12" r="4" />
-                  <circle cx="17.5" cy="6.5" r="1" /></svg
-              ></a>
-            </div>
-          </div>
-          <div>
-            <h5>Quick Links</h5>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#packages">Packages</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5>Services</h5>
-            <ul>
-              <li><a href="#services">Web Development</a></li>
-              <li><a href="#services">Frontend Development</a></li>
-              <li><a href="#services">Responsive Design</a></li>
-              <li><a href="#services">Website Redesign</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5>Contact</h5>
-            <div class="footer-contact-item">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path d="M2 6l10 7 10-7" />
-              </svg>
-              freelance-mangeshh@outlook.com
-            </div>
-            <div class="footer-contact-item">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <path
-                  d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L7.9 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"
-                />
-              </svg>
-              +91 78228 93165
-            </div>
+            <a
+              href="https://wa.me/917822893165"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Let's Talk <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
-        <div class="copyright">© 2026 Mangesh. All Rights Reserved.</div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a href="#home" class="logo">
+          <span class="tag-icon">&lt;/&gt;</span> Mangesh.
+        </a>
+
+        <p>Building for the web, one project at a time.</p>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a
+            href="https://github.com/lolagemangesh2003-hub"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            >GitHub</a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/mangesh-lolage/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+
+          <a href="mailto:freelance-mangeshh@outlook.com">Email</a>
+        </div>
+
+        <p class="copyright">
+          © <span id="year"></span> Mangesh. All rights reserved.
+        </p>
       </div>
     </footer>
 
-    <script src="/JavaScript/script.js"></script>
+    <script src="JavaScript/script.js"></script>
   </body>
 </html>
