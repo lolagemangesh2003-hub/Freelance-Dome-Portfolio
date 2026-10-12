@@ -46,8 +46,8 @@ const fresherProjects = [
       "Status tracking",
       "Dashboard analytics",
     ],
-    github: "https://github.com/",
-    demo: "#contact",
+    github: "https://github.com/lolagemangesh2003-hub/Freelance-Dome-Portfolio",
+    demo: "https://job-application-tracker-flax-psi.vercel.app/",
   },
   {
     title: "Resort Website Demo",
@@ -56,19 +56,9 @@ const fresherProjects = [
       "A conversion-focused resort experience with rooms, amenities, gallery, enquiry CTA and responsive layouts.",
     tags: ["React", "CSS", "JavaScript"],
     features: ["Responsive UI", "Booking CTA", "Modern gallery"],
-    github: "https://github.com/",
-    demo: "#projects",
-  },
-  {
-    title: "MERN Dashboard",
-    type: "College / Practice Project",
-    description:
-      "A full-stack dashboard demonstrating reusable components, REST APIs, authentication-ready structure and data views.",
-    tags: ["MongoDB", "Express", "React", "Node.js"],
-    features: ["Reusable components", "REST API", "Data views"],
-    github: "https://github.com/",
-    demo: "#projects",
-  },
+    github: "https://github.com/lolagemangesh2003-hub",
+    demo: "https://amorae-resort-client-demo-v2.vercel.app/",
+  }
 ];
 
 const services = [
@@ -112,16 +102,7 @@ const freelancerWork = [
     solution:
       "A conversion-oriented landing page with service blocks, trust signals and a direct contact journey.",
     tags: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    title: "Dashboard Application",
-    label: "Practice Project",
-    problem:
-      "Teams need a central place to view, manage and update operational information.",
-    solution:
-      "A scalable dashboard concept using reusable React components and an API-ready architecture.",
-    tags: ["MERN", "REST API", "Dashboard"],
-  },
+  }
 ];
 
 function App() {
@@ -504,12 +485,12 @@ function FresherPage({ go }) {
             text="Working as a Software Developer Intern on practical web development tasks, improving full-stack fundamentals and collaborating on implementation details."
           />
           <TimelineItem
-            year="Milestone"
+            year="2025-2026"
             title="AccioJob"
             text="Full-stack MERN Development Trainee."
           />
           <TimelineItem
-            year="Learning"
+            year="2021-2025"
             title="Pravara Rural Engineering College Loni."
             text="Completed Bachelor's from Electronics and Computer Engineering."
           />
@@ -741,7 +722,7 @@ function ProjectGrid({ projects }) {
             ))}
           </div>
           <div className="card-actions">
-            <a href={p.github} target="_blank" rel="noreferrer">
+            <a href="{p.github}" target="_blank" rel="noreferrer">
               GitHub <Github size={15} />
             </a>
             <a href={p.demo}>
@@ -812,7 +793,7 @@ function ContactSection({ freelancer = false, go }) {
           onSubmit={(e) => {
             e.preventDefault();
             alert(
-              "Thanks! Connect this form to Formspree, EmailJS, your backend, or another form provider before launch.",
+              "Thanks! Form Submitted!",
             );
           }}
         >
